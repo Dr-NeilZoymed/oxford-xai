@@ -51,6 +51,51 @@
       display:inline-block; padding:12px 16px; border-radius:10px; font-weight:700;
       background:#111827; color:#fff; border:2px solid #111827;
     }
+   /* ===== logos strip (white background) ===== */
+    .logos-wrap {
+      background: #ffffff;            /* ✅ 白底 */
+      padding: 28px 0;
+      border-top: 1px solid #e5e7eb;  /* ✅ 上边加一条浅灰分割线，层次更清晰 */
+    }
+    
+    .logos {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logos img {
+      max-height: 60px;        /* ✅ 放大了 */
+      width: auto;
+      max-width: 160px;
+      object-fit: contain;
+      display: block;
+      margin: 0 10px;
+      background: #ffffff;     /* ✅ 背景白，防止透明 logo 看不清 */
+      padding: 4px;
+      border-radius: 4px;      /* ✅ 让白底更干净 */
+      transition: transform 0.2s ease;
+      vertical-align: middle;
+    }
+    
+    .logos img:hover {
+      transform: scale(1.05);
+    }
+    
+    .logos-title {
+      color: #374151;          /* ✅ 深灰字体，适合白底 */
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
     .btn.secondary{background:transparent; color:#fff; border-color:#fff}
     nav.nav{ background:#ffffff; border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:10 }
     .nav-inner{max-width:1024px;margin:0 auto;display:flex;gap:18px;align-items:center;padding:10px 24px;overflow:auto}
@@ -249,6 +294,21 @@
       </div>
     </section>
   </main>
+
+  <!-- Logos strip -->
+  <div class="logos-wrap" aria-label="Partners and organisers">
+    <div class="logos-title">Organisers &amp; Partners</div>
+    <div class="logos">
+      <!-- 按需替换文件名或路径；建议放在 /logos/ 目录 -->
+      <img src="oxford.png" alt="University of Oxford">
+      <img src="ndm.png" alt="Nuffield Department of Medicine, University of Oxford">
+      <img src="astar.png" alt="A*STAR Singapore">
+      <img src="cambridge.png" alt="University of Cambridge">
+      <img src="CUHK.png" alt="The Chinese University of Hong Kong">
+      <img src="birmingham.png" alt="University of Birmingham">
+      <img src="leicester.png" alt="University of Leicester">
+    </div>
+  </div>
 
   <footer>
     <div>© 2025 Oxford: Advances and Applications of Explainable Artificial Intelligence</div>
