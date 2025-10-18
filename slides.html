@@ -1,0 +1,144 @@
+<!-- File: slides.html (place at repository root next to index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slides & PPT — AAEAI 2025</title>
+  <meta name="description" content="Conference slide uploads (PPT/PDF) for Oxford: Advances and Applications of Explainable AI 2025." />
+  <style>
+    :root{
+      --ink:#0b0c0f; --link:#2563eb; --border:#e5e7eb; --muted:#475569; --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:#0f172a; background:#f8fafc}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1024px;margin:0 auto;padding:24px}
+    header.top{background:#111827;color:#fff;border-bottom:8px solid #0b0c0f}
+    .top-inner{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:16px 24px}
+    .brand{font-weight:800;letter-spacing:.2px}
+    nav a{color:#fff;font-weight:600;margin-left:14px;white-space:nowrap}
+    h1{font-size:28px;margin:16px 0}
+    p.lead{color:#334155;max-width:72ch}
+    .upload-note{background:#eef2ff;border:1px solid #c7d2fe;padding:12px 14px;border-radius:12px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:800px){.grid.two{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px; box-shadow:0 1px 2px rgba(0,0,0,.04)}
+    .list{list-style:none;margin:0;padding:0}
+    .item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border-bottom:1px solid var(--border)}
+    .item:last-child{border-bottom:none}
+    .meta{color:#64748b;font-size:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;font-weight:700;background:#111827;color:#fff;border:2px solid #111827}
+    .btn.secondary{background:transparent;color:#111827}
+    footer{padding:36px 24px;background:#0b1220;color:#e5e7eb;text-align:center;margin-top:32px}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">AAEAI 2025 · Slides / PPT</div>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Conference Slides</h1>
+    <p class="lead">This page hosts slide decks from the <strong>Oxford: Advances and Applications of Explainable AI (2025)</strong> forum. Files are provided by speakers and may be updated after the event.</p>
+
+    <div class="upload-note">
+      <strong>How to add files:</strong> put <code>.pptx</code> or <code>.pdf</code> files into the <code>/ppt/</code> folder of this repository and update the list below with their filenames and titles.
+    </div>
+
+    <section class="card" style="margin-top:18px">
+      <h2 style="margin:0 0 8px 0">Keynote & Invited Talks</h2>
+      <ul class="list" id="slides-list">
+        <!-- Example entries. Replace filenames and titles to match your uploads in /ppt/ -->
+        <li class="item">
+          <div>
+            <div><strong>Keynote: Explainable & Trustworthy AI in Medical Imaging</strong></div>
+            <div class="meta">Prof. Jun Cheng — A*STAR Singapore · <span>pptx</span></div>
+          </div>
+          <div>
+            <a class="btn" href="ppt/AAEAI2025_Keynote_JunCheng.pptx" download>Download</a>
+            <a class="btn secondary" href="ppt/AAEAI2025_Keynote_JunCheng.pptx">View</a>
+          </div>
+        </li>
+        <li class="item">
+          <div>
+            <div><strong>Industry: Real‑world XAI for Ophthalmology</strong></div>
+            <div class="meta">Dr. Wei Li — Zoeymed · <span>pdf</span></div>
+          </div>
+          <div>
+            <a class="btn" href="ppt/Zoeymed_XAI_WeiLi.pdf" download>Download</a>
+            <a class="btn secondary" href="ppt/Zoeymed_XAI_WeiLi.pdf">View</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="grid two" style="margin-top:18px">
+      <div class="card">
+        <h3 style="margin:0 0 8px 0">Academic Presentations</h3>
+        <ul class="list">
+          <li class="item">
+            <div>
+              <div><strong>Structure‑Consistent Diffusion for Medical Image Translation</strong></div>
+              <div class="meta">Dr. Tianyang Zhang — University of Oxford · <span>pptx</span></div>
+            </div>
+            <div>
+              <a class="btn" href="ppt/Plasticine_Zhang.pptx" download>Download</a>
+              <a class="btn secondary" href="ppt/Plasticine_Zhang.pptx">View</a>
+            </div>
+          </li>
+          <li class="item">
+            <div>
+              <div><strong>Kidney Tubule Segmentation with 3DxN</strong></div>
+              <div class="meta">Dr. Yang Hu — University of Oxford · <span>pdf</span></div>
+            </div>
+            <div>
+              <a class="btn" href="ppt/3DxN_Tubules_Hu.pdf" download>Download</a>
+              <a class="btn secondary" href="ppt/3DxN_Tubules_Hu.pdf">View</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px 0">Special / Student Sessions</h3>
+        <ul class="list">
+          <li class="item">
+            <div>
+              <div><strong>LLMs in Social Science</strong></div>
+              <div class="meta">Dr. Yishu Ren — University of Oxford · <span>pdf</span></div>
+            </div>
+            <div>
+              <a class="btn" href="ppt/LLMs_in_SocSci_Ren.pdf" download>Download</a>
+              <a class="btn secondary" href="ppt/LLMs_in_SocSci_Ren.pdf">View</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="card" style="margin-top:18px">
+      <h3 style="margin:0 0 8px 0">Notes</h3>
+      <ul>
+        <li>Large files: keep each file ≤ 100&nbsp;MB (GitHub limit). For bigger files consider compressing or Git LFS.</li>
+        <li>Accepted formats: <code>.pptx</code>, <code>.pdf</code>, <code>.ppt</code>. Use descriptive filenames (e.g., <code>AAEAI2025_Speaker_Topic.pptx</code>).</li>
+        <li>To add or change entries, edit this page and the <code>/ppt/</code> folder in the repository.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div>© 2025 AAEAI 2025 — Slides</div>
+  </footer>
+</body>
+</html>
+
+
+<!-- Minimal patch to index.html navigation: add a link to the slides page -->
+<!-- Find the <div class="nav-inner"> in index.html and add the line below: -->
+<!-- <a href="slides.html">Slides / PPT</a> -->
